@@ -1,3 +1,3 @@
-require("tribadelic.remap")
-require("tribadelic.packer")
-require("tribadelic.set")
+require("user.remap")
+require("user.packer")
+require("user.set")
