@@ -1,3 +1,4 @@
 plugin/
 plugin/packer_compiled.lua
 profile.log
+nvim.log
