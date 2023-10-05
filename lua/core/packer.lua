@@ -44,7 +44,7 @@ return require('packer').startup(function(use)
     use { 'ray-x/web-tools.nvim' }
 
     -- Colorschemes --
-    
+    use { 'tomasiser/vim-code-dark' }
     use { 'AlexvZyl/nordic.nvim' }
     use { 'rebelot/kanagawa.nvim' }
     use { 'olivercederborg/poimandres.nvim', as = 'poimandres' }

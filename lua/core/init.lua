@@ -1,3 +1,5 @@
 require("core.remap")
 require("core.packer")
 require("core.set")
+-- require("core.settings")
+require("core.globals")
