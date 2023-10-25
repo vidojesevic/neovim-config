@@ -1,6 +1,7 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
+-- = = = = = = = = = = = = = --
+-- ==        Packer       == --
+-- = = = = = = = = = = = = = --
 
--- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
@@ -41,7 +42,6 @@ return require('packer').startup(function(use)
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
     use { 'ryanoasis/vim-devicons' }
-    use { 'ray-x/web-tools.nvim' }
 
     -- Colorschemes --
     use { 'tomasiser/vim-code-dark' }
@@ -60,5 +60,6 @@ return require('packer').startup(function(use)
     use { "nvim-neorg/neorg",
         requires = "nvim-lua/plenary.nvim",
     }
+    use { "mhinz/vim-startify" }
 
 end)

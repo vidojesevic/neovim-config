@@ -1,6 +1,7 @@
 -- = = = = = = = = = = = = = --
 -- ==   toggle function   == --
 -- = = = = = = = = = = = = = --
+
 vim.g.matchup_matchparen_deferred = 1
 
 local M = {}
@@ -17,5 +18,6 @@ function M.toggleFoldColumn()
     end
     vim.api.nvim_echo({ {"foldcolumn is set to " .. vim.opt.foldcolumn:get() } }, false, {})
 end
+
 
 return M
