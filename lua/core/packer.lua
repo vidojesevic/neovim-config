@@ -14,7 +14,6 @@ return require('packer').startup(function(use)
 	}
     use ( 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use { 'nvim-treesitter/playground' }
-    use { 'nvim-lua/plenary.nvim' }
     use { 'ThePrimeagen/harpoon' }
     use { 'mbbill/undotree' }
     use { 'tpope/vim-fugitive' }
@@ -61,5 +60,9 @@ return require('packer').startup(function(use)
         requires = "nvim-lua/plenary.nvim",
     }
     use { "mhinz/vim-startify" }
+
+    -- AI --
+    use { 'nvim-lua/plenary.nvim' }
+
 
 end)
