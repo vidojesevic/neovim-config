@@ -14,3 +14,6 @@ vim.keymap.set("i", "bb", "<ESC>")
 -- toggle foldcolumn --
 vim.keymap.set("n", "<c-x>", ":lua require'core.settings'.toggleFoldColumn()<CR>", {noremap = true, silent = true})
 -- vim.keymap.set("n", "<c-z>", "vim.cmpzc<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>mkr", "<cmd>CellularAutomaton make_it_rain<CR>")
+vim.keymap.set("n", "<leader>gml", "<cmd>CellularAutomaton game_of_life<CR>")
+vim.keymap.set("n", "<leader>sl", "<cmd>CellularAutomaton slide<CR>")

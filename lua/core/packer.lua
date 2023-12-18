@@ -64,5 +64,6 @@ return require('packer').startup(function(use)
     -- AI --
     use { 'nvim-lua/plenary.nvim' }
 
-
+    -- Fun Stuff
+    use { 'eandrju/cellular-automaton.nvim' }
 end)
