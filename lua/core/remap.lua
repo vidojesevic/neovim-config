@@ -29,15 +29,15 @@ vim.keymap.set("n", "<leader>sl", "<cmd>CellularAutomaton slide<CR>")
 ----------------
 
 -- DAP UI
-vim.keymap.set("n", "<F1>", function() require('dapui').open() end)
+vim.keymap.set("n", "<Leader>dt", function() require('dapui').toggle() end)
 -- Stepping through code
 vim.keymap.set("n", "<Leader>1", function() require('dap').step_over() end)
 vim.keymap.set("n", "<Leader>2", function() require('dap').step_into() end)
 vim.keymap.set("n", "<Leader>3", function() require('dap').step_out() end)
 -- Set breakpoint
-vim.keymap.set("n", "<F5>", function() require('dap').toggle_breakpoint() end)
+vim.keymap.set("n", "<Leader>b", function() require('dap').toggle_breakpoint() end)
 -- Start debugging
-vim.keymap.set("n", "<F6>", function() require('dap').continue() end)
+vim.keymap.set("n", "<Leader>dc", function() require('dap').continue() end)
 -- Inspecting variables
 vim.keymap.set("n", "<F7>", ":lua require'dap'.repl.open()<CR>")
 -- Run PHP script

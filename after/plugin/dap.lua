@@ -12,9 +12,16 @@ dap.configurations.php = {
         name = 'Listen for xdebug',
         port = '9000',
         log = true,
-        serverSourceRoot = '/srv/www/',
-        localSourceRoot = '/home/www/VVV/www/',
     },
+    {
+        name = 'run current script',
+        type = 'php',
+        request = 'launch',
+        port = '9000',
+        cwd = '${fileDirname}',
+        program = '${file}',
+        runtimeExecutable = 'php',
+    }
 }
 
 require("nvim-dap-virtual-text").setup()

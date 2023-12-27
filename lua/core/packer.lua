@@ -56,7 +56,8 @@ return require('packer').startup(function(use)
     }
     use { 'windwp/nvim-ts-autotag' }
     use { 'ThePrimeagen/vim-be-good' }
-    use { "nvim-neorg/neorg",
+    use {
+        "nvim-neorg/neorg",
         requires = "nvim-lua/plenary.nvim",
     }
     use { "mhinz/vim-startify" }
@@ -72,4 +73,13 @@ return require('packer').startup(function(use)
     use { 'rcarriga/nvim-dap-ui' }
     use { 'theHamsta/nvim-dap-virtual-text' }
     use { 'nvim-telescope/telescope-dap.nvim' }
+
+    -- CMD center
+    use {
+        'folke/noice.nvim',
+        requires = {
+            "MunifTanjim/nui.nvim",
+            "rcarriga/nvim-notify",
+        }
+    }
 end)
