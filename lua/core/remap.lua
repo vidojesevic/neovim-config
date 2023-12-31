@@ -8,15 +8,16 @@ vim.keymap.set("n", "<leader>n", vim.cmd.Ex)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
-----------------
--- not recommended --
-----------------
+-----------------------
+--  not recommended  --
+-----------------------
+
 vim.keymap.set("i", "bb", "<ESC>")
 vim.keymap.set("i", "bb", "<ESC>")
 
-----------------
+-----------------------
 -- toggle foldcolumn --
-----------------
+-----------------------
 
 vim.keymap.set("n", "<c-x>", ":lua require'core.settings'.toggleFoldColumn()<CR>", {noremap = true, silent = true})
 -- vim.keymap.set("n", "<c-z>", "vim.cmpzc<CR>", {noremap = true, silent = true})
@@ -24,9 +25,9 @@ vim.keymap.set("n", "<leader>mir", "<cmd>CellularAutomaton make_it_rain<CR>")
 vim.keymap.set("n", "<leader>gml", "<cmd>CellularAutomaton game_of_life<CR>")
 vim.keymap.set("n", "<leader>sl", "<cmd>CellularAutomaton slide<CR>")
 
-----------------
--- PHP xdebug --
-----------------
+-----------------------
+--    PHP xdebug     --
+-----------------------
 
 -- DAP UI
 vim.keymap.set("n", "<Leader>dt", function() require('dapui').toggle() end)
@@ -44,3 +45,13 @@ vim.keymap.set("n", "<F7>", ":lua require'dap'.repl.open()<CR>")
 vim.keymap.set("n", "<F8>", ":lua require'dap'.run_last()<CR>")
 -- Disconnect
 vim.keymap.set("n", "<F9>", ":lua require'dap'.disconnect()<CR>")
+
+-----------------------
+-- Disable arrow key --
+-----------------------
+
+vim.api.nvim_set_keymap('n', '<Up>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Down>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Left>', '<Nop>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Right>', '<Nop>', { noremap = true, silent = true })
+
