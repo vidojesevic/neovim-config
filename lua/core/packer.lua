@@ -88,9 +88,9 @@ return require('packer').startup(function(use)
     use({
         'pbogut/magento2-ls',
         -- Build using cargo build --release
-        run = "require'magento2_ls'.build()" ,
+        -- run = "require'magento2_ls'.build()" ,
         -- Alternatively, you can download the compiled binary from the GitHub release.
-        -- run = "require'magento2_ls'.get_server()" ,
+        run = "require'magento2_ls'.get_server()" ,
         config = "require'magento2_ls'.setup()"
     })
 end)

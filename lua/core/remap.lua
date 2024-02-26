@@ -64,3 +64,7 @@ vim.api.nvim_set_keymap('i', '<Up>', '<Nop>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', '<Down>', '<Nop>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', '<Left>', '<Nop>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', '<Right>', '<Nop>', { noremap = true, silent = true })
+
+-- Magento 2 remaps
+remap("n", "<leader>m", ":lua magento.AppendXml()<CR>", {noremap = true})
+remap("n", "<leader>r", ":lua magento.RegisterPHP()<CR>", {noremap = true})
