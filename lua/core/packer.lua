@@ -14,8 +14,9 @@ return require('packer').startup(function(use)
 	}
     use ( 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use { 'nvim-treesitter/playground' }
-    use { 'ThePrimeagen/harpoon' }
     use { 'mbbill/undotree' }
+
+    use { 'ThePrimeagen/harpoon' }
     use { 'tpope/vim-fugitive' }
     use {
         'VonHeikemen/lsp-zero.nvim',
@@ -82,4 +83,14 @@ return require('packer').startup(function(use)
             "rcarriga/nvim-notify",
         }
     }
+
+    -- Magento2 LSP
+    use({
+        'pbogut/magento2-ls',
+        -- Build using cargo build --release
+        run = "require'magento2_ls'.build()" ,
+        -- Alternatively, you can download the compiled binary from the GitHub release.
+        -- run = "require'magento2_ls'.get_server()" ,
+        config = "require'magento2_ls'.setup()"
+    })
 end)
