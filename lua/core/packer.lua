@@ -93,4 +93,6 @@ return require('packer').startup(function(use)
         run = "require'magento2_ls'.get_server()" ,
         config = "require'magento2_ls'.setup()"
     })
+    use { 'praem90/nvim-phpcsf' }
+    use { 'brett-griffin/phpdocblocks.vim' }
 end)
