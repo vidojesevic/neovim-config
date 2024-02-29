@@ -95,4 +95,15 @@ return require('packer').startup(function(use)
     })
     use { 'praem90/nvim-phpcsf' }
     use { 'brett-griffin/phpdocblocks.vim' }
+    use {
+        "folke/tokyonight.nvim",
+        priority = 1000,
+        opts = {},
+    }
+
+    -- notes
+    use {
+        'renerocksai/telekasten.nvim',
+        requires = {'nvim-telescope/telescope.nvim'}
+    }
 end)
