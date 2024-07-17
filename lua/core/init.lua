@@ -1,6 +1,0 @@
-require("core.set")
-require("core.remap")
-require("core.packer")
--- require("core.settings")
-require("core.globals")
-require("core.magento_remaps")
